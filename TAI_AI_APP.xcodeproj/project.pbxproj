@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F7DF19530797685005BB6D0 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F7DF1943079767C005BB6D0 /* readme.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9F7DF17A30797599005BB6D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		9F7DF16C30797598005BB6D0 /* TAI_AI_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAI_AI_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7DF17930797599005BB6D0 /* TAI_AI_APPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAI_AI_APPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7DF18330797599005BB6D0 /* TAI_AI_APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAI_AI_APPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7DF1943079767C005BB6D0 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +74,7 @@
 		9F7DF16330797598005BB6D0 = {
 			isa = PBXGroup;
 			children = (
+				9F7DF1943079767C005BB6D0 /* readme.md */,
 				9F7DF16E30797598005BB6D0 /* TAI_AI_APP */,
 				9F7DF17C30797599005BB6D0 /* TAI_AI_APPTests */,
 				9F7DF18630797599005BB6D0 /* TAI_AI_APPUITests */,
@@ -197,6 +203,7 @@
 		9F7DF16A30797598005BB6D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				9F7DF19530797685005BB6D0 /* readme.md in Resources */,
 			);
 		};
 		9F7DF17730797599005BB6D0 /* Resources */ = {
