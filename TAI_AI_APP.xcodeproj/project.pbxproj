@@ -50,6 +50,16 @@
 			path = TAI_AI_APPUITests;
 			sourceTree = "<group>";
 		};
+		9FBA24EE308915330056423F /* Screens */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9FBA24EF308924B70056423F /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,8 @@
 		9F7DF16330797598005BB6D0 = {
 			isa = PBXGroup;
 			children = (
+				9FBA24EF308924B70056423F /* Models */,
+				9FBA24EE308915330056423F /* Screens */,
 				9F7DF1943079767C005BB6D0 /* readme.md */,
 				9F7DF16E30797598005BB6D0 /* TAI_AI_APP */,
 				9F7DF17C30797599005BB6D0 /* TAI_AI_APPTests */,
@@ -107,6 +119,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9F7DF16E30797598005BB6D0 /* TAI_AI_APP */,
+				9FBA24EE308915330056423F /* Screens */,
+				9FBA24EF308924B70056423F /* Models */,
 			);
 			name = TAI_AI_APP;
 			productName = TAI_AI_APP;

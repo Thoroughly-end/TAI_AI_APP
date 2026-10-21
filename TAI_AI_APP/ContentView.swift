@@ -7,15 +7,38 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+enum APPTab: String {
+    case progress = "Progress"
+    case TAI = "TAI"
+    case detail = "Detail"
+    
+    var symbolImage: String {
+        return switch self {
+            case .progress: "car"
+            case .TAI: "icloud"
+            case .detail: "info"
         }
-        .padding()
+    }
+}
+
+struct ContentView: View {
+    @State var selected: APPTab = .progress
+    @State var bgColor = UIColor(named: "BgColor") ?? UIColor.secondaryLabel
+    
+    var body: some View {
+        TabView(selection: $selected) {
+            Tab("Progress", systemImage: APPTab.progress.symbolImage, value: APPTab.progress) {
+                Progress()
+            }
+            Tab("TAI", systemImage: APPTab.TAI.symbolImage, value: APPTab.TAI) {
+                
+            }
+            Tab("Detail", systemImage: APPTab.detail.symbolImage, value: APPTab.detail) {
+                
+            }
+        }
+        .background(Color(bgColor).ignoresSafeArea(.all))
+        .ignoresSafeArea(.all)
     }
 }
 
