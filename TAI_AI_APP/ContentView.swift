@@ -23,12 +23,14 @@ enum APPTab: String {
 
 struct ContentView: View {
     @State var selected: APPTab = .progress
-    @State var bgColor = UIColor(named: "BgColor") ?? UIColor.secondaryLabel
+    
     
     var body: some View {
         TabView(selection: $selected) {
             Tab("Progress", systemImage: APPTab.progress.symbolImage, value: APPTab.progress) {
                 Progress()
+                    .environmentObject(ProgressData(stages: Stage.samples))
+                    .ignoresSafeArea(.container, edges: .bottom)
             }
             Tab("TAI", systemImage: APPTab.TAI.symbolImage, value: APPTab.TAI) {
                 
@@ -37,8 +39,8 @@ struct ContentView: View {
                 
             }
         }
-        .background(Color(bgColor).ignoresSafeArea(.all))
-        .ignoresSafeArea(.all)
+        
+        
     }
 }
 

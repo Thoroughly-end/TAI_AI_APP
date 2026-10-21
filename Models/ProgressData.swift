@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct Stage: Identifiable {
+class Stage: Identifiable {
     let id = UUID()
     let msg: String
     let detail: String
@@ -27,6 +27,14 @@ enum StageStatus {
     case done
     case inProgress
     case pending
+    
+    var color: String {
+        return switch self {
+            case .done: "ColorDone"
+            case .inProgress: "ColorDoing"
+            case .pending: "ColorPending"
+        }
+    }
 }
 
 extension Stage {
@@ -38,7 +46,7 @@ extension Stage {
         Stage(msg: "確認維修項目與報價", detail: "原訂項目已確認；追加項目另行詢問",
               symbolImage: "doc.text", status: .inProgress),
         Stage(msg: "維修煞車片", detail: "前煞車來令片 • 零件與工資已說明",
-              symbolImage: "steeringwheel", status: .pending),
+              symbolImage: "brakesignal", status: .pending),
         Stage(msg: "更換機油與濾芯", detail: "原訂保養 • 依工單規格施工",
               symbolImage: "oilcan", status: .pending),
     ]
